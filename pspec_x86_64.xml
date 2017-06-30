@@ -1,0 +1,49 @@
+<PISI>
+    <Source>
+        <Name>libcutl</Name>
+        <Packager>
+            <Name>Peter O&apos;Connor</Name>
+            <Email>peter@solus-project.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <PartOf>programming.library</PartOf>
+        <Summary xml:lang="en">C++ utility library</Summary>
+        <Description xml:lang="en">libcutl is a C++ utility library. It contains a collection of generic and independent components such as meta-programming tests, smart pointers, containers, compiler building blocks, etc.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>libcutl</Name>
+        <Summary xml:lang="en">C++ utility library</Summary>
+        <Description xml:lang="en">libcutl is a C++ utility library. It contains a collection of generic and independent components such as meta-programming tests, smart pointers, containers, compiler building blocks, etc.
+</Description>
+        <PartOf>programming.library</PartOf>
+        <Files>
+            <Path fileType="library">/usr/lib64/lib*.so</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>libcutl-devel</Name>
+        <Summary xml:lang="en">Development files for libcutl</Summary>
+        <Description xml:lang="en">libcutl is a C++ utility library. It contains a collection of generic and independent components such as meta-programming tests, smart pointers, containers, compiler building blocks, etc.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">libcutl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/*.pc</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-06-28</Date>
+            <Version>1.10.0</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Peter O&apos;Connor</Name>
+            <Email>peter@solus-project.com</Email>
+        </Update>
+    </History>
+</PISI>

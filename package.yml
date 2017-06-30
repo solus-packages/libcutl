@@ -1,0 +1,19 @@
+name       : libcutl
+version    : 1.10.0
+release    : 1
+source     :
+    - http://codesynthesis.com/download/libcutl/1.10/libcutl-1.10.0.tar.bz2 : 125163c670e372b47d5626d54379ff8fbaded6ccd5db77ac0bf5912a4017121c
+license    : MIT
+component  : programming.library
+libsplit   : no
+summary    : C++ utility library
+description: |
+    libcutl is a C++ utility library. It contains a collection of generic and independent components such as meta-programming tests, smart pointers, containers, compiler building blocks, etc.
+builddeps  :
+    - libboost-devel
+setup      : |
+    %configure --disable-static --with-external-boost --with-external-expat
+build      : |
+    %make
+install    : |
+    %make_install
